@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Siva Kumar | VLSI & Electronics Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #f1f5f9;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            background: rgba(45, 212, 191, 0.1);
+            color: #2dd4bf;
+        }
+
+        .nav-btn.active {
+            background: #2dd4bf;
+            color: #0f172a;
+            box-shadow: 0 0 20px rgba(45, 212, 191, 0.4);
+        }
+
+        .section-animate {
+            animation: slideUp 0.5s ease-out forwards;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .skill-card:hover {
+            border-color: #2dd4bf;
+            box-shadow: 0 0 15px rgba(45, 212, 191, 0.2);
+        }
+
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            background: #1e293b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-container img {
+            transition: transform 0.5s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-card:hover img, .cert-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .img-fallback {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #475569;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #2dd4bf; }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Header Section -->
+    <header class="max-w-6xl mx-auto mb-8 text-center section-animate">
+        <h1 class="text-4xl md:text-6xl font-bold mb-2 tracking-tight">
+            SANJAY SIVA KUMAR <span class="text-teal-400">SURAMPUDI</span>
+        </h1>
+        <!-- <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">
+            Electronics & Communication Student at <span class="text-blue-400">Aditya University</span>
+            Specializing in VLSI Design & Verification.
+        </p> -->
+    </header>
+
+    <!-- Navigation -->
+    <nav class="max-w-4xl mx-auto mb-12 sticky top-4 z-50">
+        <div class="glass rounded-2xl p-2 flex flex-wrap justify-center gap-2 shadow-2xl">
+            <button onclick="showSection('about')" id="btn-about" class="nav-btn active px-6 py-2 rounded-xl font-semibold flex items-center gap-2">
+                <i data-lucide="user" class="w-4 h-4"></i> About
+            </button>
+            <button onclick="showSection('skills')" id="btn-skills" class="nav-btn px-6 py-2 rounded-xl font-semibold flex items-center gap-2">
+                <i data-lucide="cpu" class="w-4 h-4"></i> Skills
+            </button>
+            <button onclick="showSection('projects')" id="btn-projects" class="nav-btn px-6 py-2 rounded-xl font-semibold flex items-center gap-2">
+                <i data-lucide="layout" class="w-4 h-4"></i> Projects
+            </button>
+            <button onclick="showSection('certificates')" id="btn-certificates" class="nav-btn px-6 py-2 rounded-xl font-semibold flex items-center gap-2">
+                <i data-lucide="award" class="w-4 h-4"></i> Certifications
+            </button>
+            <button onclick="showSection('contact')" id="btn-contact" class="nav-btn px-6 py-2 rounded-xl font-semibold flex items-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4"></i> Contact
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="max-w-6xl mx-auto min-h-[60vh]">
+        
+        <!-- ABOUT SECTION -->
+        <section id="section-about" class="content-section section-animate">
+            <div class="grid md:grid-cols-1 gap-8">
+                <div class="glass p-8 rounded-3xl">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 text-teal-400">
+                        <i data-lucide="info"></i>Career Objective 
+                    </h2>
+                    <ul class="space-y-4 text-slate-300">
+                        
+                        <li class="flex gap-3">
+                            <span class="text-teal-400">▹</span>
+                            <span>Aspiring VLSI engineer with a strong foundation in digital design and hardware concepts, complemented by basic
+knowledge of Data Structures and Algorithms and C programming. Seeking an opportunity to apply academic
+learning and problem-solving skills in designing and optimizing scalable semiconductor solutions. Eager to
+contribute to innovative projects while continuously enhancing technical expertise in VLSI design and verification.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 text-teal-400">
+                        <i data-lucide="info"></i> Personal Profile
+                    </h2>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex gap-3">
+                            <span class="text-teal-400">▹</span>
+                            <span>Pursuing B.Tech in Electronics & Communication at Aditya University Surampalem.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-teal-400">▹</span>
+                            <span>Lives Ramachandrapuram, Andhra Pradesh.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-teal-400">▹</span>
+                            <span>Fascinated by VLSI design, verification engineering, and scalable hardware modules.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 text-teal-400">
+                        <i data-lucide="target"></i> Career Vision
+                    </h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-semibold text-white mb-2">Short Term Goal</h3>
+                            <p class="text-slate-400">Mastering synthesizable, modular, and parameterized Verilog design logic.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-white mb-2">Long Term Goal</h3>
+                            <p class="text-slate-400">Building a robust career in the VLSI domain and bridging academic knowledge with industry practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="section-skills" class="content-section hidden section-animate">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Programming -->
+                <div class="glass p-6 rounded-2xl skill-card border border-transparent transition-all">
+                    <i data-lucide="code-2" class="w-10 h-10 text-teal-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Programming</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Verilog HDL</span>                       
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">C / C++ (DSA)</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Python</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Embedded C</span>
+                    </div>
+                </div>
+                <!-- Technologies-->
+                 <div class="glass p-6 rounded-2xl skill-card border border-transparent transition-all">
+                    <i data-lucide="microchip" class="w-10 h-10 text-teal-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Technologies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">IOT</span>                       
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">VLSI</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">HTML</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">CSS</span>
+                    </div>
+                </div>
+                <!-- VLSI & EDA -->
+                <div class="glass p-6 rounded-2xl skill-card border border-transparent transition-all">
+                    <i data-lucide="microchip" class="w-10 h-10 text-teal-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">VLSI</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Digital Electronics & System design</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Combinational & Sequential Circuits</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Logic Synthesis</span>
+                    </div>
+                </div>
+                <!-- Software -->
+                <div class="glass p-6 rounded-2xl skill-card border border-transparent transition-all">
+                    <i data-lucide="layers" class="w-10 h-10 text-teal-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Software</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Eagle (PCB Design)</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Proteus</span>
+                        <!-- <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">EDA Playground</span> -->
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">MS Excel</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">PSpice</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Matlab</span>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="glass p-6 rounded-2xl skill-card border border-transparent transition-all">
+                    <i data-lucide="layers" class="w-10 h-10 text-teal-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">EDA Playground</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Xilinx vivado</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Gowin</span>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                 <div class="glass p-6 rounded-2xl skill-card border border-transparent transition-all">
+                    <i data-lucide="code-2" class="w-10 h-10 text-teal-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Team Collaboration & Communication</span>                       
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Problem-Solving & Debugging Mindset</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Logical Thinking & Precision</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-sm border border-slate-700">Time Management & Task Prioritization</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="section-projects" class="content-section hidden section-animate">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Project 1 -->
+                <div class="glass p-4 rounded-2xl cert-card">
+                    <div class="h-48 rounded-xl img-container mb-4">
+                        
+                        <!--<div class="img-fallback"><i data-lucide="car" class="w-12 h-12 mb-2"></i><span class="text-xs">Bluetooth Car</span></div>-->
+                        <img src="A:\MY BIO\Portfolio\bluetoothcar.jpg" alt="Bluetooth Controlling Car" onerror="this.style.opacity='0'">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-teal-400 mb-2">Bluetooth Controlling Car</h3>
+                        <p class="text-slate-400 text-sm">Components: Arduino, HC-05, Gear Motors, L298N Driver. Controls movement via paired smartphone application.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="glass p-4 rounded-2xl cert-card">
+                    <div class="h-48 rounded-xl img-container mb-4">
+                        
+                        <!--<div class="img-fallback"><i data-lucide="home" class="w-12 h-12 mb-2"></i><span class="text-xs">Home Automation</span></div>-->
+                        <img src="A:\MY BIO\Portfolio\Smart-Home-Automation-System.jpg" alt="Home Appliances Control" onerror="this.style.opacity='0'">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-teal-400 mb-2">Smart Home Automation</h3>
+                        <p class="text-slate-400 text-sm">Relay-based control system for home appliances. Interface designed for smartphone toggling of 240V devices.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="glass p-4 rounded-2xl cert-card">
+                    <div class="h-48 rounded-xl img-container mb-4">
+                        
+                        <!--<div class="img-fallback"><i data-lucide="gamepad-2" class="w-12 h-12 mb-2"></i><span class="text-xs">Tic Tac Toe</span></div>-->
+                        <img src="A:\MY BIO\Portfolio\tictactoe.jpg" alt="TIC TAC TOE" onerror="this.style.opacity='0'">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-teal-400 mb-2">TIC TAC TOE Engine</h3>
+                        <p class="text-slate-400 text-sm">A robust C++ implementation of the classic game. Focuses on logic algorithms and win-state detection without GUI overhead.</p>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="glass p-4 rounded-2xl cert-card">
+                    <div class="h-48 rounded-xl img-container mb-4">
+                        <!-- <div class="img-fallback"><i data-lucide="binary" class="w-12 h-12 mb-2"></i><span class="text-xs">BCD Converter</span></div>-->
+                        <img src="A:\MY BIO\Portfolio\7segment.jpg" alt="BCD to 7-Segment" onerror="this.style.opacity='0'">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-teal-400 mb-2">BCD to 7-Segment Display</h3>
+                        <p class="text-slate-400 text-sm">Digital logic circuit designed in Proteus. Converts 4-bit Binary Coded Decimal input into readable decimal on 7-segment displays.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="section-certificates" class="content-section hidden section-animate">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Cert 1 -->
+                <div class="glass p-4 rounded-2xl cert-card">
+                    <div class="h-48 rounded-xl img-container mb-4">
+                        <!--<div class="img-fallback"><i data-lucide="file-check" class="w-8 h-8 mb-1"></i><span class="text-[10px]">Cadence 101</span></div>-->
+                        <img src="A:\MY BIO\Portfolio\certificates\cadance_semiconductor_101.png" alt="Cadence 101" onerror="this.style.opacity='0'">
+                    </div>
+                    <h3 class="font-bold text-center text-sm">Semiconductor 101 v1.0</h3>
+                    <p class="text-teal-400 text-[10px] text-center uppercase tracking-widest mt-1">Cadence Design Systems</p>
+                </div>
+                <!-- Cert 2 -->
+                <div class="glass p-4 rounded-2xl cert-card">
+                    <div class="h-48 rounded-xl img-container mb-4">
+                      <!--  <div class="img-fallback"><i data-lucide="file-check" class="w-8 h-8 mb-1"></i><span class="text-[10px]">Digital IC</span></div>-->
+                        <img src="A:\MY BIO\Portfolio\certificates\DICD.png" alt="Digital IC Design" onerror="this.style.opacity='0'">
+                    </div>
+                    <h3 class="font-bold text-center text-sm">Digital IC Fundamentals v2.0</h3>
+                    <p class="text-teal-400 text-[10px] text-center uppercase tracking-widest mt-1">Cadence Design Systems</p>
+                </div>
+                <!-- Cert 3 -->
+                <div class="glass p-4 rounded-2xl cert-card">
+                    <div class="h-48 rounded-xl img-container mb-4">
+                      <!--  <div class="img-fallback"><i data-lucide="file-check" class="w-8 h-8 mb-1"></i><span class="text-[10px]">Verilog</span></div>-->
+                        <img src="A:\MY BIO\Portfolio\certificates\Verilog.png" alt="Verilog Cert" onerror="this.style.opacity='0'">
+                    </div>
+                    <h3 class="font-bold text-center text-sm">Verilog Language v28.0</h3>
+                    <p class="text-teal-400 text-[10px] text-center uppercase tracking-widest mt-1">Cadence Design Systems</p>
+                </div>
+                <!-- Cert 4 -->
+                <div class="glass p-4 rounded-2xl cert-card">
+                    <div class="h-48 rounded-xl img-container mb-4">
+                       <!-- <div class="img-fallback"><i data-lucide="file-check" class="w-8 h-8 mb-1"></i><span class="text-[10px]">Excel</span></div>-->
+                        <img src="A:\MY BIO\Portfolio\certificates\excel.jpg" alt="Excel Cert" onerror="this.style.opacity='0'">
+                    </div>
+                    <h3 class="font-bold text-center text-sm">Microsoft Excel</h3>
+                    <p class="text-teal-400 text-[10px] text-center uppercase tracking-widest mt-1">Microsoft</p>
+                </div>
+                <!-- Cert 5 -->
+                <div class="glass p-4 rounded-2xl cert-card">
+                    <div class="h-48 rounded-xl img-container mb-4">
+                       <!-- <div class="img-fallback"><i data-lucide="file-check" class="w-8 h-8 mb-1"></i><span class="text-[10px]">HackerRank</span></div>-->
+                        <img src="A:\MY BIO\Portfolio\certificates\problem solving in hacker rank.jpg" alt="HackerRank" onerror="this.style.opacity='0'">
+                    </div>
+                    <h3 class="font-bold text-center text-sm">Problem Solving</h3>
+                    <p class="text-teal-400 text-[10px] text-center uppercase tracking-widest mt-1">HackerRank</p>
+                </div>
+                <!-- Cert 6 -->
+                <div class="glass p-4 rounded-2xl cert-card">
+                    <div class="h-48 rounded-xl img-container mb-4">
+                      <!--  <div class="img-fallback"><i data-lucide="file-check" class="w-8 h-8 mb-1"></i><span class="text-[10px]">IITM</span></div>-->
+                        <img src="A:\MY BIO\Portfolio\certificates\iitm.png" alt="IIT Mumbai" onerror="this.style.opacity='0'">
+                    </div>
+                    <h3 class="font-bold text-center text-sm">IOT Workshop</h3>
+                    <p class="text-teal-400 text-[10px] text-center uppercase tracking-widest mt-1">IIT Mumbai (TechFest)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="section-contact" class="content-section hidden section-animate">
+            <div class="max-w-2xl mx-auto glass p-8 rounded-3xl">
+                <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
+                <div class="space-y-6">
+                    <a href="mailto:sanjaysanju2k6@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group">
+                        <div class="w-12 h-12 bg-teal-400/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i data-lucide="mail" class="text-teal-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm">Email</p>
+                            <p class="font-semibold text-teal-400">sanjaysanju2k6@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sanjay-siva-kumar-surampudi-a4790831a/" target="_blank" class="flex items-center gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group">
+                        <div class="w-12 h-12 bg-blue-400/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i data-lucide="linkedin" class="text-blue-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm">LinkedIn</p>
+                            <p class="font-semibold text-blue-400">LinkedIn.io</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/SanjaySurampudi" target="_blank" class="flex items-center gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group">
+                        <div class="w-12 h-12 bg-blue-400/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i data-lucide="github" class="text-blue-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm">GITHUB</p>
+                            <p class="font-semibold text-blue-400">Github.io</p>
+                        </div>
+                    </a>
+                    <div class="flex items-center gap-4 p-4 rounded-2xl">
+                        <div class="w-12 h-12 bg-slate-400/10 rounded-xl flex items-center justify-center">
+                            <i data-lucide="phone" class="text-slate-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm">Call</p>
+                            <p class="font-semibold">8367743496</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 rounded-2xl">
+                        <div class="w-12 h-12 bg-slate-400/10 rounded-xl flex items-center justify-center">
+                            <i data-lucide="map-pin" class="text-slate-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm">Address</p>
+                            <p class="font-semibold">Ramachandrapuram, East Godavari, AP, 533255</p>
+                        </div>
+                    </div>
+                    <div class="glass p-8 rounded-3xl flex flex-col items-center justify-center text-center">
+                    <div class="w-20 h-20 bg-teal-400/10 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="file-text" class="w-10 h-10 text-teal-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Curriculum Vitae</h3>
+                    <p class="text-slate-400 mb-8 max-w-xs">Download my latest resume for a detailed view of my academic records and projects.</p>
+                    
+                    <!-- DOWNLOAD BUTTON -->
+                    <a href="My_Resume.pdf" download="Sanjay_Surampudi_Resume.pdf" class="w-full py-4 bg-teal-400 text-slate-900 rounded-2xl font-bold flex items-center justify-center gap-3 hover:bg-teal-300 transition-all shadow-lg hover:shadow-teal-400/20 active:scale-95">
+                        <i data-lucide="download" class="w-5 h-5"></i>
+                        DOWNLOAD RESUME
+                    </a>
+                    <p class="mt-4 text-xs text-slate-500 italic">PDF Format • 1.2 MB</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-20 text-center text-slate-500 pb-8 text-sm">
+        <p>&copy; 2024 Sanjay Siva Kumar Surampudi. All rights reserved.</p>
+        <p class="mt-2 font-mono">Designed for VLSI & Digital Engineering Excellence</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Section Switching Logic
+        function showSection(sectionId) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            const targetSection = document.getElementById(`section-${sectionId}`);
+            targetSection.classList.remove('hidden');
+            document.getElementById(`btn-${sectionId}`).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
