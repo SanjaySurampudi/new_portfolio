@@ -1,57 +1,62 @@
-<h1 align="center">Hi 👋, I'm Sanjay Surampudi</h1>
+# 👨‍💻 Sanjay Siva Kumar Surampudi — Portfolio
 
-<div align="center">
-  <img src="https://github.com/sanjaysurampudi/sanjaysurampudi/raw/main/profile-photo.jpg" 
-       alt="Sanjay at the beach" 
-       width="260" 
-       style="border-radius: 50%; border: 4px solid #0d1117;"/>
-  <br><br>
-  <p>
-    <em>Full-Stack Developer | Problem Solver | Coastal Coder from Visakhapatnam 🌊</em>
-  </p>
-</div>
+> **VLSI & Electronics Engineer | Digital Design Enthusiast**
+> 🌐 [View Portfolio](https://sanjaysurampudi.github.io/new_portfolio/)
 
-<br>
+---
 
-I'm a passionate developer who loves turning ideas into clean, functional code.  
-Currently exploring web technologies, building projects, and enjoying sunsets by the Bay of Bengal.
+## 🎯 Career Objective
 
-### 🔧 Technologies & Tools
+Aspiring VLSI engineer with a strong foundation in digital design and hardware concepts, complemented by basic knowledge of Data Structures and Algorithms and C programming. Seeking an opportunity to apply academic learning and problem-solving skills in designing and optimizing scalable semiconductor solutions. Eager to contribute to innovative projects while continuously enhancing technical expertise in VLSI design and verification.
 
-- **Frontend**: HTML • CSS • JavaScript • React • Tailwind CSS  
-- **Backend**: Node.js • Express • REST APIs  
-- **Languages**: JavaScript • Python • Java • C / C++  
-- **Databases**: MongoDB • MySQL  
-- **Others**: Git • GitHub • VS Code • Problem Solving (DSA) • Linux basics
+---
 
-### 🚀 Featured Projects
+## 👤 Personal Profile
 
-(Coming soon – actively working on some cool stuff!)
+| Field        | Details                                          |
+|--------------|--------------------------------------------------|
+| 🎓 Education | B.Tech in Electronics & Communication — Aditya University, Surampalem |
+| 📍 Location  | Ramachandrapuram, Andhra Pradesh, India          |
+| 💡 Interests | VLSI Design, Verification Engineering, Scalable Hardware Modules |
 
-1. **Project One** – [Brief one-liner]  
-   Tech: React, Node.js, MongoDB  
-   → [Live] • [Repo]
+---
 
-2. **Project Two** – [Brief one-liner]  
-   Tech: Next.js, Tailwind, Firebase  
-   → [Live] • [Repo]
+## 🛠️ Skills
 
-More projects on the way — check back soon!
+- **Hardware Description Language:** Verilog (synthesizable, modular, parameterized)
+- **Programming:** C, Data Structures & Algorithms (basic)
+- **Domain Focus:** Digital Design, VLSI Design & Verification, Semiconductor Solutions
 
-### 📫 Let's Connect
+---
 
-- 💼 [LinkedIn](#) → replace with your actual link  
-- 📧 Email: sanjay.surampudi@email.com (update with real address)  
-- 🌐 Portfolio: [sanjaysurampudi.github.io/Portfolio](https://sanjaysurampudi.github.io/Portfolio/) (under construction)  
-- 🐦 [Twitter / X](#) → add if you have
+## 🚀 Career Vision
 
-<br>
+### 🔹 Short-Term Goal
+Master synthesizable, modular, and parameterized Verilog design logic.
+
+### 🔸 Long-Term Goal
+Build a robust career in the VLSI domain, bridging academic knowledge with real-world industry practices.
+
+---
+
+## 📁 Sections
+
+- **About** — Personal background and profile
+- **Skills** — Technical competencies
+- **Projects** — Hands-on work and implementations
+- **Certifications** — Academic and professional credentials
+- **Contact** — Get in touch
+
+---
+
+## 📬 Contact
+
+For collaboration or opportunities, visit the portfolio:
+🔗 [https://sanjaysurampudi.github.io/new_portfolio/](https://sanjaysurampudi.github.io/new_portfolio/)
+
+---
 
 <p align="center">
-  <i>Code. Coffee. Coast. Repeat.</i><br>
-  Thanks for stopping by! 🚀
-</p>
-
-<p align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=sanjaysurampudi.sanjaysurampudi" alt="visitors"/>
+  © 2024 Sanjay Siva Kumar Surampudi. All rights reserved.<br>
+  <em>Designed for VLSI & Digital Engineering Excellence</em>
 </p>
